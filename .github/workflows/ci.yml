@@ -7,8 +7,6 @@ on:
 env:
   IMAGE_NAME: jiyaa5/mlops-capstone
   IMAGE_TAG: latest
-  MLFLOW_TRACKING_URI: http://127.0.0.1:5000
-  MLFLOW_MODEL_RUN: runs:/5cb5e5d9525349618d7495d02170f0fa/model
 
 
 jobs:
@@ -35,9 +33,7 @@ jobs:
 
       # Test step
       - name: Run tests
-        run: |
-          export PYTHONPATH=$PYTHONPATH:.
-          pytest tests/
+        run: pytest tests/
 
       # Docker steps
       - name: Log in to DockerHub
