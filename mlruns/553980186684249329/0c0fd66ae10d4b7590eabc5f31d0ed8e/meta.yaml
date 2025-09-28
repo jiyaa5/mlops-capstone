@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/553980186684249329/0c0fd66ae10d4b7590eabc5f31d0ed8e/artifacts
+end_time: 1759076581655
+entry_point_name: ''
+experiment_id: '553980186684249329'
+lifecycle_stage: active
+run_id: 0c0fd66ae10d4b7590eabc5f31d0ed8e
+run_name: linear_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759076576085
+status: 3
+tags: []
+user_id: JIYA
