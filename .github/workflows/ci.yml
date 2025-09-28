@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+IMAGE_NAME: jiyaa5/mlops-capstone
+IMAGE_TAG: latest
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,28 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
           pip install -r requirements.txt
+          pip install flake8 pytest httpx
 
-      # TODO: Add lint/test steps
-      # TODO: Build Docker image and push to DockerHub
+      # Linting step
+      - name: Lint code
+        run: flake8 src/
+
+      # Test step
+      - name: Run tests
+        run: pytest tests/
+
+      # Docker steps
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: docker build -t ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }} .
+
+      - name: Push Docker image
+        run: docker push ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+
