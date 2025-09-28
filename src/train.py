@@ -62,7 +62,7 @@ def main():
             artifact_path="model",             # <-- use artifact_path
             input_example=X_train[:5].astype(float)
         )
-
+        mlflow.sklearn.log_model()
         # Plot prediction vs actual
         plt.figure()
         plt.scatter(y_test, y_pred)

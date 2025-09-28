@@ -1,0 +1,18 @@
+aliases: []
+creation_timestamp: 1759094085414
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1759094085414
+metrics: null
+model_id: m-c657b412bf484bf88f32c080ee66822f
+name: HousingPricePredictor
+params: null
+run_id: ba072cf5d783427f9c2e07d09f12f54b
+run_link: ''
+source: models:/m-c657b412bf484bf88f32c080ee66822f
+status: READY
+status_message: null
+storage_location: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/286662785541361765/models/m-c657b412bf484bf88f32c080ee66822f/artifacts
+user_id: null
+version: 1
