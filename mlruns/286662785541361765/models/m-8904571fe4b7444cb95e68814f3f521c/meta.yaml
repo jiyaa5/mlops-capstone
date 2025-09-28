@@ -1,0 +1,10 @@
+artifact_location: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/286662785541361765/models/m-8904571fe4b7444cb95e68814f3f521c/artifacts
+creation_timestamp: 1759078688781
+experiment_id: '286662785541361765'
+last_updated_timestamp: 1759078693614
+model_id: m-8904571fe4b7444cb95e68814f3f521c
+model_type: null
+name: model
+source_run_id: 9201106e7fbe4d0f86e8772576a849d6
+status: 2
+status_message: null

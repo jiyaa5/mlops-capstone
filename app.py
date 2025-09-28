@@ -30,6 +30,7 @@ MLFLOW_MODEL_RUN = f"runs:/{runs[0].info.run_id}/model"
 
 model = mlflow.pyfunc.load_model(MLFLOW_MODEL_RUN)
 
+print("Loading MLflow model from:", MLFLOW_MODEL_RUN)
 
 
 app = FastAPI()

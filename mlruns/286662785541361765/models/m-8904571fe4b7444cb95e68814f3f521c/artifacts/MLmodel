@@ -1,4 +1,4 @@
-artifact_path: mlflow-artifacts:/553980186684249329/models/m-688fabbee1b7446f8a22d9a9e93e5689/artifacts
+artifact_path: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/286662785541361765/models/m-8904571fe4b7444cb95e68814f3f521c/artifacts
 flavors:
   python_function:
     env:
@@ -15,11 +15,11 @@ flavors:
     sklearn_version: 1.7.2
 is_signature_from_type_hint: false
 mlflow_version: 3.4.0
-model_id: m-688fabbee1b7446f8a22d9a9e93e5689
+model_id: m-8904571fe4b7444cb95e68814f3f521c
 model_size_bytes: 878
-model_uuid: m-688fabbee1b7446f8a22d9a9e93e5689
+model_uuid: m-8904571fe4b7444cb95e68814f3f521c
 prompts: null
-run_id: 0c0fd66ae10d4b7590eabc5f31d0ed8e
+run_id: 9201106e7fbe4d0f86e8772576a849d6
 saved_input_example_info:
   artifact_path: input_example.json
   pandas_orient: split
@@ -30,4 +30,4 @@ signature:
   outputs: '[{"type": "double", "required": true}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2025-09-28 16:22:56.453571'
+utc_time_created: '2025-09-28 16:58:08.822679'

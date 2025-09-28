@@ -59,8 +59,8 @@ def main():
         # Log model
         mlflow.sklearn.log_model(
             sk_model=model,
-            name="model",
-            input_example=X_train.head(5).astype(float),
+            artifact_path="model",             # <-- use artifact_path
+            input_example=X_train[:5].astype(float)
         )
 
         # Plot prediction vs actual

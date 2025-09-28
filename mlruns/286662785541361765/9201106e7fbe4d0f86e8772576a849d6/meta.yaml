@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/286662785541361765/9201106e7fbe4d0f86e8772576a849d6/artifacts
+end_time: 1759078694006
+entry_point_name: ''
+experiment_id: '286662785541361765'
+lifecycle_stage: active
+run_id: 9201106e7fbe4d0f86e8772576a849d6
+run_name: linear_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759078688658
+status: 3
+tags: []
+user_id: JIYA
