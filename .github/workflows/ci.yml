@@ -32,7 +32,9 @@ jobs:
 
       # Test step
       - name: Run tests
-        run: pytest tests/
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          pytest tests/
 
       # Docker steps
       - name: Log in to DockerHub
