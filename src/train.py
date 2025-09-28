@@ -21,7 +21,8 @@ def main():
     )
 
     # Connect to MLflow
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
+    tracking_dir = os.path.abspath("mlruns")  # makes full path
+    mlflow.set_tracking_uri(f"file:///{tracking_dir.replace(os.sep, '/')}")
     mlflow.set_experiment("Housing-Regression")
 
     # Start MLflow run
@@ -53,10 +54,6 @@ def main():
         mlflow.log_metric("mse", mse)
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("mae", mae)
-
-        # Save model locally
-        model_path = "model.pkl"
-        joblib.dump(model, model_path)
 
         mlflow.sklearn.log_model(
             sk_model=model,
