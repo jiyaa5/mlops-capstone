@@ -1,4 +1,6 @@
 [core]
-    remote = localremote
+    remote = s3remote
 ['remote "localremote"']
     url = ../dvc_storage
+['remote "s3remote"']
+    url = s3://my-mlopsdvc-bucket
