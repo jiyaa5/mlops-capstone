@@ -17,11 +17,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import mlflow.pyfunc
 import pandas as pd
-from dotenv import load_dotenv
 
-load_dotenv()  
-
-# Get environment variables
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
 MLFLOW_MODEL_RUN = os.getenv("MLFLOW_MODEL_RUN")
 

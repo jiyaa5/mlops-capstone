@@ -8,15 +8,16 @@ import joblib
 import mlflow
 import mlflow.sklearn
 
-def main():
 
+def main():
     df = pd.read_csv("data/housing.csv")
     X = df[["area"]]
     y = df["price"]
 
     test_size = 0.2
     random_state = 42
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=random_state
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=test_size, random_state=random_state
     )
 
     # Connect to MLflow
@@ -25,7 +26,6 @@ def main():
 
     # Start MLflow run
     with mlflow.start_run(run_name="linear_regression") as run:
-
         # Train model
         model = LinearRegression()
         model.fit(X_train, y_train)
@@ -39,7 +39,9 @@ def main():
         rmse = np.sqrt(mse)
         mae = mean_absolute_error(y_test, y_pred)
 
-        print(f"R^2: {r2}, MSE: {mse}, RMSE: {rmse}, MAE: {mae}")
+        print(
+            f"R^2: {r2}, MSE: {mse}, RMSE: {rmse}, MAE: {mae}"
+        )
 
         # Log params
         mlflow.log_param("test_size", test_size)
@@ -59,10 +61,8 @@ def main():
         mlflow.sklearn.log_model(
             sk_model=model,
             name="model",
-            input_example=X_train[:5].astype(float)  # avoid integer schema warning
+            input_example=X_train[:5].astype(float)
         )
-
-        # Log local pickle as artifact
 
         # Plot prediction vs actual and log
         plt.scatter(y_test, y_pred)
@@ -74,6 +74,7 @@ def main():
 
         print("Run ID:", run.info.run_id)
         print("Model saved and logged with MLflow!")
+
 
 if __name__ == "__main__":
     main()
