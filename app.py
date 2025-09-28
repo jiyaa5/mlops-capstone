@@ -17,13 +17,20 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import mlflow.pyfunc
 import pandas as pd
+from mlflow.tracking import MlflowClient
 
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
-MLFLOW_MODEL_RUN = os.getenv("MLFLOW_MODEL_RUN")
 
+client = MlflowClient(tracking_uri=MLFLOW_TRACKING_URI)
+experiment = client.get_experiment_by_name("Housing-Regression")
+runs = client.search_runs([experiment.experiment_id], order_by=["attributes.start_time DESC"], max_results=1)
 
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+MLFLOW_MODEL_RUN = f"runs:/{runs[0].info.run_id}/model"
+
 model = mlflow.pyfunc.load_model(MLFLOW_MODEL_RUN)
+
+
 
 app = FastAPI()
 

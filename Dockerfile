@@ -7,9 +7,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV MLFLOW_TRACKING_URI=http://127.0.0.1:5000
-ENV MLFLOW_MODEL_RUN=runs:/5cb5e5d9525349618d7495d02170f0fa/model
+# Copy mlruns folder
+COPY mlruns/ /app/mlruns/
+
+# Set environment variables
+ENV MLFLOW_TRACKING_URI=file:/app/mlruns
 
 EXPOSE 8000
-
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
