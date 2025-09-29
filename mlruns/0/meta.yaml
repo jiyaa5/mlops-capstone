@@ -1,6 +1,6 @@
-artifact_location: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/0
-creation_time: 1759078688386
+artifact_location: mlflow-artifacts:/0
+creation_time: 1759123091989
 experiment_id: '0'
-last_update_time: 1759078688386
+last_update_time: 1759123091989
 lifecycle_stage: active
 name: Default

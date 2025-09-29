@@ -1,18 +1,18 @@
 aliases: []
-creation_timestamp: 1759094085414
+creation_timestamp: 1759123591481
 current_stage: None
 deployment_job_state: null
 description: ''
-last_updated_timestamp: 1759094085414
+last_updated_timestamp: 1759123591481
 metrics: null
-model_id: m-c657b412bf484bf88f32c080ee66822f
+model_id: m-d603f37999f64d869d68eaa6b956dcf5
 name: HousingPricePredictor
 params: null
-run_id: ba072cf5d783427f9c2e07d09f12f54b
+run_id: ae191358fd084d87ab8262377d888ea9
 run_link: ''
-source: models:/m-c657b412bf484bf88f32c080ee66822f
+source: models:/m-d603f37999f64d869d68eaa6b956dcf5
 status: READY
 status_message: null
-storage_location: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/286662785541361765/models/m-c657b412bf484bf88f32c080ee66822f/artifacts
+storage_location: file:///E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-d603f37999f64d869d68eaa6b956dcf5/artifacts
 user_id: null
 version: 1

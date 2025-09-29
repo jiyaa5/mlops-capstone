@@ -12,7 +12,13 @@ REGISTERED_MODEL_NAME = os.environ.get("MLFLOW_REGISTERED_MODEL_NAME")
 class InputData(BaseModel):
     area: float
 
-def load_model():
+# -------------------------------
+# Function 1: load_local_model
+# Purpose: Dynamically loads the latest model directly from the local mlruns folder.
+# This works without registering the model, useful for quick local testing.
+# -------------------------------
+
+def load_local_model():
     exp = client.get_experiment_by_name(EXPERIMENT_NAME)
     models = [os.path.join("mlruns", exp.experiment_id, "models", d, "artifacts")
               for d in os.listdir(os.path.join("mlruns", exp.experiment_id, "models"))
@@ -20,19 +26,24 @@ def load_model():
     latest = max(models, key=os.path.getmtime)
     return mlflow.pyfunc.load_model(f"file://{os.path.abspath(latest)}"), latest
 
-def registered_model():
-    model_name = os.getenv("MLFLOW_REGISTERED_MODEL_NAME", "HousingPricePredictor")
-    latest_version = client.get_latest_versions(model_name, stages=["None"])[0]
-    model_uri = f"models:/{model_name}/{latest_version.version}"
+# -------------------------------
+# Function 2: load_registered_model
+# Purpose: Loads a model from the MLflow Model Registry using its registered name and latest version.
+# This is more production-friendly, since models can be versioned and promoted.
+# -------------------------------
+
+def load_registered_model():
+    latest_version = client.get_latest_versions(REGISTERED_MODEL_NAME, stages=["None"])[0]
+    model_uri = f"models:/{REGISTERED_MODEL_NAME}/{latest_version.version}"
     return mlflow.pyfunc.load_model(model_uri), model_uri
 
 @app.get("/health")
-def health(): return {"status": "ok", "model_path": load_model()[1]}
+def health(): return {"status": "ok"}
 
 @app.post("/predict")
 def predict(data: InputData):
-    model = load_model()[0]
-    # model = registered_model()[0]
+    model = load_registered_model()[0]
+    # model = load_local_model()[0]  # Uncomment to use local model
     try: 
         df = pd.DataFrame([{"area": data.area}])
         prediction = model.predict(df)[0]

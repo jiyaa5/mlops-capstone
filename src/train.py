@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import train_test_split
-
+import joblib
 import mlflow
 import mlflow.sklearn
 
@@ -59,10 +59,10 @@ def main():
         # Log model
         mlflow.sklearn.log_model(
             sk_model=model,
-            artifact_path="model",             # <-- use artifact_path
+            artifact_path="model",     
             input_example=X_train[:5].astype(float)
         )
-        mlflow.sklearn.log_model()
+        
         # Plot prediction vs actual
         plt.figure()
         plt.scatter(y_test, y_pred)
@@ -72,6 +72,7 @@ def main():
         plt.savefig("prediction_plot.png")
         mlflow.log_artifact("prediction_plot.png", artifact_path="plots")
 
+        joblib.dump(model, "model.pkl")
         print("Run ID:", run.info.run_id)
         print("Model saved and logged with MLflow!")
 
