@@ -15,5 +15,5 @@ result = mlflow.register_model(
     f"runs:/{latest_run_id}/model",
     "HousingPricePredictor"
 )
-
+print(experiment.experiment_id, latest_run_id)
 print("Registered model:", result.name, "version:", result.version)

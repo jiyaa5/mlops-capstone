@@ -1,0 +1,33 @@
+artifact_path: file:E:/Sem 5/Deveops/mlops-capstone/mlruns/1/models/m-0680bdd56900477d9ce1423cb766595d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.4.0
+model_id: m-0680bdd56900477d9ce1423cb766595d
+model_size_bytes: 878
+model_uuid: m-0680bdd56900477d9ce1423cb766595d
+prompts: null
+run_id: bdb980326b624b53aea091a8db084417
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "area", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-05 06:42:03.861260'

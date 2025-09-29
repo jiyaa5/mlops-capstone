@@ -25,7 +25,7 @@ def main():
 
     # Set MLflow tracking
     tracking_dir = os.path.abspath("mlruns")
-    mlflow.set_tracking_uri(f"file:///{tracking_dir.replace(os.sep, '/')}")
+    mlflow.set_tracking_uri("http://127.0.0.1:5000")
     mlflow.set_experiment("Housing-Regression")
 
     # Start MLflow run

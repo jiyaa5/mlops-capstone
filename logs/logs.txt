@@ -1,0 +1,114 @@
+2025-09-29 09:22:20,857 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1666c10>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:22:25,218 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1664a50>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:22:33,598 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1665c90>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:22:49,714 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac16650d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:23:22,626 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1636150>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:24:00,647 - INFO - Health check requested
+2025-09-29 09:26:27,148 - ERROR - ERROR - Input: 120.0, Error: API request to http://127.0.0.1:5000/api/2.0/mlflow/registered-models/get failed with exception HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1668ed0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-29 09:26:43,703 - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bcac1669550>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:30:14,327 - INFO - Health check requested
+2025-09-29 09:30:24,970 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bc586f66fd0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:30:29,835 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bc586f3df90>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:30:38,014 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bc586f3d390>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:30:54,347 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bc586f6cd50>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-09-29 09:31:26,949 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7bc586f6fa90>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+ 2025-10-06 12:29:08,956 - INFO - Health check requested
+2025-10-06 12:29:21,305 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-d603f37999f64d869d68eaa6b956dcf5/artifacts/.'
+2025-10-06 12:35:14,218 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-06 12:42:22,278 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-06 13:04:38,158 - INFO - Health check requested
+2025-10-06 13:04:50,338 - INFO - Using load_registered_model()
+2025-10-06 13:04:50,725 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-06 13:09:23,482 - INFO - Using load_registered_model()
+2025-10-06 13:09:23,892 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-06 13:18:26,461 - INFO - Health check requested
+2025-10-06 13:18:31,004 - INFO - Using load_registered_model()
+2025-10-06 13:18:31,385 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-06 13:18:38,621 - INFO - Using load_registered_model()
+2025-10-06 13:18:38,841 - ERROR - ERROR - Input: 1200.0, Error: No such file or directory: '/E:/Sem 5/Deveops/mlops-capstone/mlruns/697110476536176889/models/m-4997a41ccf73471ead45b789f89bed92/artifacts/.'
+2025-10-07 16:45:41,700 - INFO - Using load_registered_model()
+2025-10-07 16:52:36,864 - ERROR - ERROR - Input: 1200.0, Error: API request to http://host.docker.internal:5000/api/2.0/mlflow/registered-models/get failed with timeout exception HTTPConnectionPool(host='host.docker.internal', port=5000): Max retries exceeded with url: /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001BE6F297350>, 'Connection to host.docker.internal timed out. (connect timeout=120)')). To increase the timeout, set the environment variable MLFLOW_HTTP_REQUEST_TIMEOUT (default: 120) to a larger value.
+2025-10-07 16:53:14,116 - INFO - Using load_registered_model()
+2025-10-07 16:53:35,186 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001EF2B1E5E80>, 'Connection to host.docker.internal timed out. (connect timeout=120)')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-10-07 16:54:00,209 - INFO - Health check requested
+2025-10-07 16:54:00,881 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001EF2B156FD0>, 'Connection to host.docker.internal timed out. (connect timeout=120)')': /api/2.0/mlflow/registered-models/get?name=HousingPricePredictor
+2025-10-07 16:54:23,989 - INFO - Using load_registered_model()
+2025-10-07 16:58:22,776 - INFO - Health check requested
+2025-10-07 16:58:26,115 - INFO - Using load_registered_model()
+2025-10-07 16:58:38,703 - INFO - SUCCESS - Input: 1200.0, Prediction: 85.00410234339608
+2025-10-07 17:09:01,265 - INFO - Using load_registered_model()
+2025-10-07 17:09:01,384 - INFO - SUCCESS - Input: 0.0, Prediction: -6.826623668212363
+2025-10-07 17:12:05,209 - INFO - Health check requested
+2025-10-07 17:19:30,596 - INFO - Health check requested
+2025-10-07 17:19:32,359 - INFO - Using load_registered_model()
+2025-10-07 17:19:34,506 - INFO - SUCCESS - Input: 1200.0, Prediction: 85.00410234339608
+2025-10-07 17:19:44,841 - INFO - Using load_registered_model()
+2025-10-07 17:19:44,946 - INFO - SUCCESS - Input: 0.0, Prediction: -6.826623668212363
+2025-10-07 17:23:37,749 - INFO - Using load_registered_model()
+2025-10-07 17:23:40,084 - ERROR - BAD INPUT - Non-positive 'area': area=0.0
+2025-10-07 17:23:40,084 - ERROR - ERROR - Input: 0.0, Error: 422: 'area' must be positive
+2025-10-07 17:23:47,742 - INFO - Using load_registered_model()
+2025-10-07 17:23:47,910 - ERROR - BAD INPUT - Non-positive 'area': area=0.0
+2025-10-07 17:23:47,910 - ERROR - ERROR - Input: 0.0, Error: 422: 'area' must be positive
+2025-10-07 17:24:01,413 - ERROR - BAD INPUT - Path: /predict, Body: <could not read body>, Errors: [{'type': 'json_invalid', 'loc': ('body', 9), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': 'Expecting value'}}]
+2025-10-07 17:29:51,457 - INFO - Using load_registered_model()
+2025-10-07 17:29:54,140 - ERROR - BAD INPUT - Non-positive 'area': area=0.0
+2025-10-07 17:30:19,215 - INFO - Using load_registered_model()
+2025-10-07 17:30:19,337 - ERROR - BAD INPUT - Non-positive 'area': area=-1220.0
+2025-10-07 17:30:38,478 - ERROR - BAD INPUT - Path: /predict, Body: <could not read body>, Errors: [{'type': 'json_invalid', 'loc': ('body', 9), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': 'Expecting value'}}]
+2025-10-07 17:31:12,143 - ERROR - BAD INPUT - Path: /predict, Body: <could not read body>, Errors: [{'type': 'json_invalid', 'loc': ('body', 9), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': 'Expecting value'}}]
+2025-10-07 17:31:13,023 - ERROR - BAD INPUT - Path: /predict, Body: <could not read body>, Errors: [{'type': 'json_invalid', 'loc': ('body', 9), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': 'Expecting value'}}]
+2025-10-07 17:31:14,522 - INFO - Using load_registered_model()
+2025-10-07 17:31:14,848 - ERROR - BAD INPUT - Non-positive 'area': area=-1220.0
+2025-10-07 17:31:16,790 - INFO - Using load_registered_model()
+2025-10-07 17:31:16,886 - ERROR - BAD INPUT - Non-positive 'area': area=0.0
+2025-10-07 17:31:21,310 - INFO - Using load_registered_model()
+2025-10-07 17:31:21,410 - INFO - SUCCESS - Input: 1500.0, Prediction: 107.96178384629819
+2025-10-07 17:36:26,484 - INFO - Health check requested
+2025-10-07 17:36:27,255 - INFO - Health check requested
+2025-10-07 17:36:28,885 - INFO - Health check requested
+2025-10-07 17:36:29,551 - INFO - Health check requested
+2025-10-07 17:36:30,178 - INFO - Health check requested
+2025-10-07 17:36:30,849 - INFO - Health check requested
+2025-10-07 17:36:31,514 - INFO - Health check requested
+2025-10-07 17:36:32,811 - INFO - Health check requested
+2025-10-07 17:37:01,578 - INFO - Using load_registered_model()
+2025-10-07 17:37:04,210 - INFO - SUCCESS - Input: 1200.0, Prediction: 85.00410234339608
+2025-10-07 17:37:13,003 - INFO - Using load_registered_model()
+2025-10-07 17:37:13,098 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:14,185 - INFO - Using load_registered_model()
+2025-10-07 17:37:14,297 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:15,404 - INFO - Using load_registered_model()
+2025-10-07 17:37:15,493 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:16,068 - INFO - Using load_registered_model()
+2025-10-07 17:37:16,159 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:16,739 - INFO - Using load_registered_model()
+2025-10-07 17:37:16,852 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:17,410 - INFO - Using load_registered_model()
+2025-10-07 17:37:17,502 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:18,031 - INFO - Using load_registered_model()
+2025-10-07 17:37:18,123 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:18,534 - INFO - Using load_registered_model()
+2025-10-07 17:37:18,629 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:19,114 - INFO - Using load_registered_model()
+2025-10-07 17:37:19,194 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:37:20,468 - INFO - Using load_registered_model()
+2025-10-07 17:37:20,561 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 17:54:53,297 - INFO - Using load_registered_model()
+2025-10-07 17:54:55,974 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 18:02:52,938 - INFO - Using load_registered_model()
+2025-10-07 18:02:55,665 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 18:02:56,592 - INFO - Using load_registered_model()
+2025-10-07 18:02:56,680 - ERROR - BAD INPUT - Non-positive 'area': area=-1200.0
+2025-10-07 18:05:58,255 - INFO - Using load_registered_model()
+2025-10-07 18:06:00,349 - INFO - SUCCESS - Input: 1200.0, Prediction: 85.00410234339608
+2025-10-07 18:06:02,077 - INFO - Health check requested
+2025-10-07 18:06:03,067 - INFO - Health check requested
+2025-10-07 18:06:03,788 - INFO - Health check requested
+2025-10-07 18:06:16,676 - INFO - Health check requested
+2025-10-07 18:06:17,383 - INFO - Health check requested
+2025-10-07 18:06:18,086 - INFO - Health check requested
+2025-10-07 18:06:27,786 - INFO - Health check requested
+2025-10-07 18:06:29,142 - INFO - Health check requested
+2025-10-07 18:06:29,748 - INFO - Health check requested
+2025-10-07 18:06:30,271 - INFO - Health check requested

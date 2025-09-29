@@ -7,6 +7,8 @@ on:
 env:
   IMAGE_NAME: jiyaa5/mlops-capstone
   IMAGE_TAG: latest
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 
 
 jobs:
