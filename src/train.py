@@ -9,7 +9,6 @@ import joblib
 import mlflow
 import mlflow.sklearn
 
-
 def main():
     # Load dataset
     df = pd.read_csv("data/housing.csv")
@@ -59,10 +58,10 @@ def main():
         # Log model
         mlflow.sklearn.log_model(
             sk_model=model,
-            artifact_path="model",     
+            artifact_path="model",
             input_example=X_train[:5].astype(float)
         )
-        
+
         # Plot prediction vs actual
         plt.figure()
         plt.scatter(y_test, y_pred)
