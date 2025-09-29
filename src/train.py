@@ -9,6 +9,7 @@ import joblib
 import mlflow
 import mlflow.sklearn
 
+
 def main():
     # Load dataset
     df = pd.read_csv("data/housing.csv")
