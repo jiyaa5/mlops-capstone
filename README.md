@@ -48,4 +48,28 @@ This repository is the starter package for the **End-to-End MLOps Assignment**.
 - Terraform provisioned infra resources.
 - Monitoring script demo.
 
+provider "aws" {
+  region = "ap-south-1"  
+}
+
+resource "aws_s3_bucket" "modified_bucket" {
+  bucket = "jiya-terraform-demo-123456"  
+  force_destroy = true
+
+  tags = {
+    Name        = "Updated Bucket"
+    Environment = "Production"
+  }
+}
+
+resource "aws_instance" "web_server" {
+  ami           = "ami-0c1a7f89451184c8b"  
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "EC2"
+  }
+}
+
+
 Happy coding 🚀
